@@ -1,3 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Overpass", sans-serif;
+    }
+}
+
+/* Add these styles after your existing CSS */
+.swiper {
+    width: 100%;
+    padding-bottom: 40px !important;
+}
+
+/* Testimonial Swiper Styles */
+.testimonial-swiper {
+    padding: 20px 0 !important;
+}
+
+@media (max-width: 768px) {
+    .testimonial-swiper {
+        padding: 10px 0 !important;
+    }
+}
+
+/* Tech Stack Swiper Styles */
+.tech-stack-swiper {
+    padding: 20px 0 !important;
+}
+
+.tech-stack-swiper .swiper-slide {
+    height: auto !important;
+}

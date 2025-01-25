@@ -17,7 +17,11 @@ export default {
         '2xl': '1400px',
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        overpass: ['Overpass', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
