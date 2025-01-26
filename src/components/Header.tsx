@@ -4,9 +4,9 @@ import { HiPlay } from 'react-icons/hi2';
 const Header = () => {
     return (
         <div
-            className="header relative w-full min-h-screen overflow-hidden
+            className="header relative w-full min-h-screen
             bg-no-repeat bg-cover bg-center">
-            <div className="relative max-w-7xl mx-auto px-4 pt-24 lg:pt-32 sm:px-6 lg:px-8">
+            <div className="relative sm:overflow-hidden max-w-7xl mx-auto px-4 pt-24 lg:pt-32 sm:px-6 lg:px-8">
                 <div className="text-center mb-8 lg:mb-12">
                     <h1 className="text-white text-3xl lg:text-6xl font-bold leading-tight mb-4 lg:mb-6
                         px-4">
@@ -35,20 +35,22 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="relative max-w-md lg:max-w-2xl mx-auto mt-8">
+                <div className="relative  max-w-md lg:max-w-2xl mx-auto mt-8">
                     <img
                         src="./images/editor-1.png"
                         alt="Code Editor"
                         className="w-full rounded-lg"
                     />
 
-                    <div className="hidden lg:block absolute left-[-15rem] bottom-[20.5rem]
-                        bg-white rounded-2xl shadow-card">
+
+                    <div className="absolute hidden lg:block bg-[url('./images/stats.png')] bg-no-repeat bg-contain left-[-15rem] bottom-[20.5rem]
+                        bg-white p-4 rounded-2xl shadow-[0_0_0_9px_rgba(0,0,0,0.05)]
+                        sm:scale-[50%] sm:origin-bottom-left w-[300px] h-[173px]">
+
                         <div className="flex items-center gap-3">
-                            <div className="bg-[url('./images/stats.png')] w-12 h-12 bg-no-repeat bg-contain" />
-                            <h4 className="text-sm font-bold">
-                                <span className="text-primary">Response</span><br />
-                                <span className="text-secondary">Stats</span>
+                            <h4 className="text-base font-bold">
+                                <span className="text-[#377DFF]">Response</span><br />
+                                <span className="text-[#23283B]">Stats</span>
                             </h4>
                         </div>
                     </div>
@@ -86,10 +88,9 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div className="lg:hidden absolute left-[-2rem] top-[-2rem]
-                        bg-white p-2 rounded-xl shadow-card-sm scale-75">
+                    <div className="lg:hidden absolute left-[-6rem] top-[19rem]
+                        bg-white p-4 rounded-xl scale-[25%] shadow-card-sm   w-[300px] h-[173px] bg-[url('./images/stats.png')] bg-no-repeat bg-contain">
                         <div className="flex items-center gap-2">
-                            <div className="bg-[url('./images/stats.png')] w-8 h-8 bg-no-repeat bg-contain" />
                             <h4 className="text-xs font-bold">
                                 <span className="text-primary">Response</span><br />
                                 <span className="text-secondary">Stats</span>
@@ -97,7 +98,7 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div className="lg:hidden absolute right-[-2rem] top-[-1rem]
+                    <div className="lg:hidden absolute left-[2rem] bottom-[-3rem]
                         bg-white p-2 rounded-xl shadow-card-sm scale-75">
                         <div className="flex items-center gap-2">
                             <BsTrophy className="text-xl text-primary" />
@@ -108,7 +109,7 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div className="lg:hidden absolute left-4 bottom-[-1rem]
+                    <div className="lg:hidden absolute right-0 bottom-[-6rem]
                         bg-white p-3 rounded-xl shadow-card-sm scale-75">
                         <div className="text-center">
                             <h2 className="text-2xl font-bold">
@@ -119,10 +120,10 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div className="lg:hidden absolute right-4 bottom-[-1rem]
+                    <div className="lg:hidden absolute right-24 bottom-[-9rem]
                         bg-white p-3 rounded-xl shadow-card-sm scale-75">
                         <div className="text-center">
-                            <h2 className="text-lg font-bold">
+                            <h2 className="text-xl font-bold">
                                 <span className="text-primary">Free</span>
                                 <span className="text-secondary"> Account</span>
                             </h2>

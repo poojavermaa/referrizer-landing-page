@@ -123,12 +123,19 @@ const Navbar = () => {
             >
                 <div className="h-full overflow-y-auto">
                     {/* Mobile menu header */}
-                    <div className="px-6 py-4 border-b border-gray-200">
+                    <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
                         <img
                             className="h-8 w-auto"
                             src="./images/logo-dark.png"
                             alt="Referrizer"
                         />
+                        <button
+                            onClick={() => setIsOpen(false)}
+                            className="p-2 rounded-md text-[#23283B] hover:text-[#377DFF] hover:bg-gray-100 
+                                transition-colors duration-300"
+                        >
+                            <HiX size={24} color="#4c70f0" />
+                        </button>
                     </div>
 
                     {/* Mobile menu items */}

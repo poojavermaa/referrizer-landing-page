@@ -1,6 +1,6 @@
 const CommunityBanner = () => {
     return (
-        <div className="relative w-full py-[2%] sm:py-[4%] sm:px-[8%]">
+        <div className="relative w-full py-[4%] sm:py-[4%] sm:px-[8%]">
 
 
             <div className="relative w-full bg-primary sm:rounded-lg">

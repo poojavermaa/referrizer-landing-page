@@ -58,7 +58,7 @@ const stories: Story[] = [
 
 const SuccessStory = () => {
     return (
-        <div className='w-full py-[2%] px-[8%] sm:py-[4%] sm:px-[8%]'>
+        <div className='w-full py-[4%] px-[8%] sm:py-[4%] sm:px-[8%]'>
             <div className='text-center mb-12'>
                 <span className='text-primary text-sm font-semibold'>Success Stories</span>
                 <h2 className='text-secondary text-4xl font-bold mt-4 mb-4 sm:text-2xl'>Success Stories</h2>
