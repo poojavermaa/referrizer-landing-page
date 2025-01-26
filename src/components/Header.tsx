@@ -48,7 +48,7 @@ const Header = () => {
                         sm:scale-[50%] sm:origin-bottom-left w-[300px] h-[173px]">
 
                         <div className="flex items-center gap-3">
-                            <h4 className="text-base font-bold">
+                            <h4 className="text-2xl font-bold">
                                 <span className="text-[#377DFF]">Response</span><br />
                                 <span className="text-[#23283B]">Stats</span>
                             </h4>
@@ -91,7 +91,7 @@ const Header = () => {
                     <div className="lg:hidden absolute left-[-6rem] top-[19rem]
                         bg-white p-4 rounded-xl scale-[25%] shadow-card-sm   w-[300px] h-[173px] bg-[url('./images/stats.png')] bg-no-repeat bg-contain">
                         <div className="flex items-center gap-2">
-                            <h4 className="text-xs font-bold">
+                            <h4 className="text-xl font-bold">
                                 <span className="text-primary">Response</span><br />
                                 <span className="text-secondary">Stats</span>
                             </h4>
