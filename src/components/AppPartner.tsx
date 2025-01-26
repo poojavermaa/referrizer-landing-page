@@ -1,6 +1,6 @@
 const AppPartner = () => {
     return (
-        <div className="w-full h-[50vh] px-[8%] bg-[url('./images/app-market-mobile.png')] 
+        <div className="w-full h-[60vh] my-[4%] px-[8%] bg-[url('./images/app-market-mobile.png')] 
             bg-no-repeat bg-contain bg-center flex justify-center items-center text-center
             sm:h-[90vh] sm:bg-[url('./images/app-market.png')] sm:bg-[center_top_3rem]">
             <div>
