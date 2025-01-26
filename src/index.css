@@ -43,7 +43,7 @@
     background-repeat: no-repeat;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .header {
         background-image: url("./images/header-mobile.png");
     }
