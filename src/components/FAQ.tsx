@@ -10,7 +10,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="w-full  py-[2%] px-[8%] sm:py-[4%] sm:px-[8%]">
+    <div className="w-full   px-[8%]  sm:px-[8%]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h5 className="text-primary text-xs font-semibold mb-5">FAQ's</h5>
