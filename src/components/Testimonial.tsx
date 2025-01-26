@@ -64,7 +64,7 @@ const SlideNavButtons = () => {
 const Testimonial = () => {
     return (
         <div className="w-full bg-white py-[4%] px-[8%] sm:py-[4%] sm:px-[4%]">
-            <div className="text-center mb-12 sm:mb-8">
+            <div className="text-center mb-12 sm:mb-8 pt-20 sm:pt-2">
                 <span className="text-primary text-sm font-semibold sm:text-xs">Testimonials</span>
                 <h2 className="text-secondary text-4xl font-bold mt-4 mb-4 
                     sm:text-2xl sm:mt-2 sm:mb-2">
