@@ -98,24 +98,36 @@ const SuccessStory = () => {
 };
 
 const StoryCard = ({ story }: { story: Story }) => (
-    <div className='bg-white'>
-        <div className='text-primary text-4xl mb-4'>❝</div>
-        <h3 className='text-secondary text-xl font-semibold mb-4'>{story.title}</h3>
-        <p className='text-secondary-light text-base mb-8'>{story.content}</p>
+    <div className='bg-white '>
+        <div className='relative max-w-lg mx-auto'>
+            {/* Background image with content */}
+            <div className='relative'>
+                <img src='./images/Union.png' alt='background' width={500} height={300} className='w-full rounded-lg' />
 
-        <div className='flex items-center justify-between mb-6'>
-            <div className='flex items-center gap-4'>
-                <BsLinkedin className='text-primary text-xl' />
-                <span className='text-primary text-sm'>LinkedIn</span>
-            </div>
-            <div className='flex items-center gap-2'>
-                <HiOutlineEye className='text-primary text-xl' />
-                <span className='text-primary text-sm'>View Story</span>
+                <div className='absolute top-0 left-6 w-16 h-16 bg-white flex justify-center items-center'>
+                    <div className='absolute top-[-30px] left-4 text-[#377DFF] text-[4.5rem] text-center mb-4'>❝</div>
+                </div>
+
+                <div className='absolute inset-0 flex flex-col justify-start items-start p-6'>
+                    <h3 className='text-[#23283B] text-xl font-semibold mb-4 mt-4'>{story.title}</h3>
+                    <p className='text-[#6B7B9C] text-base mb-8'>{story.content}</p>
+
+                    <div className='flex items-center w-full mt-auto mb-2 '>
+                        <div className='flex items-center gap-2 mr-6'>
+                            <BsLinkedin className='text-[#377DFF] text-xl' />
+                            <span className='text-[#377DFF] text-sm p-4'>LinkedIn</span>
+                        </div>
+                        <div className='flex items-center gap-2'>
+                            <HiOutlineEye className='text-[#377DFF] text-xl' />
+                            <span className='text-[#377DFF] text-sm'>View Story</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div className='flex items-center gap-4'>
-            <img src={story.author.image} alt={story.author.name} className='w-12 h-12 rounded-full object-cover' />
+        <div className='flex items-center gap-4 mt-2'>
+            <img src={story.author.image} alt={story.author.name} className='w-14 h-14 rounded-full object-cover' />
             <div>
                 <h4 className='text-secondary font-semibold'>{story.author.name}</h4>
                 <p className='text-secondary-light text-sm'>
