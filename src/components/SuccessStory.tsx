@@ -76,7 +76,9 @@ const SuccessStory = () => {
 
             {/* Mobile View with Swiper */}
             <div className='md:hidden'>
-                <Swiper modules={[Pagination]} spaceBetween={20} slidesPerView={1} pagination={{ clickable: true }} className='mySwiper'>
+                <Swiper style={{
+                    overflow: 'visible'
+                }} modules={[Pagination]} spaceBetween={20} slidesPerView={1} pagination={{ clickable: true }} className='mySwiper'>
                     {stories.map((story) => (
                         <SwiperSlide key={story.id}>
                             <StoryCard story={story} />

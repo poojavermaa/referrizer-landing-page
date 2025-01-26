@@ -3,10 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
-import { FaJava, FaAngular, FaAndroid, FaApple, FaChevronRight } from "react-icons/fa";
+import { FaJava, FaAngular, FaAndroid, FaApple, FaChevronRight, FaReact } from "react-icons/fa";
 import { DiNodejs, DiPython } from "react-icons/di";
 import { VscCode } from "react-icons/vsc";
 import { HiDocumentText } from "react-icons/hi";
+import { FaFlutter } from 'react-icons/fa6';
 
 const technologies = [
     { name: 'Java', icon: FaJava },
@@ -16,6 +17,9 @@ const technologies = [
     { name: 'Android', icon: FaAndroid },
     { name: 'API Ref', icon: VscCode },
     { name: 'IOS', icon: FaApple },
+    { name: 'React', icon: FaReact },
+    { name: 'Flutter', icon: FaFlutter },
+    { name: 'React Native', icon: FaReact },
 ];
 
 const DevDocs = () => {
@@ -26,7 +30,7 @@ const DevDocs = () => {
     };
 
     return (
-        <div className="w-full bg-gray-50 py-[2%] px-[8%] sm:py-[4%] sm:px-[4%]">
+        <div className="w-full bg-[#F6F8FEBF] py-[2%] px-[8%] sm:py-[4%] sm:px-[4%]">
             <div className="text-center mb-8 sm:mb-6">
                 <span className="text-primary text-sm font-semibold sm:text-xs">Dev Docs</span>
                 <h2 className="text-secondary text-4xl font-bold mt-4 mb-4 
@@ -74,11 +78,11 @@ const DevDocs = () => {
                                 spaceBetween: 20
                             },
                             768: {
-                                slidesPerView: 5,
+                                slidesPerView: 6,
                                 spaceBetween: 20
                             },
                             1024: {
-                                slidesPerView: 6,
+                                slidesPerView: 7,
                                 spaceBetween: 20
                             }
                         }}
@@ -88,12 +92,15 @@ const DevDocs = () => {
                             const IconComponent = tech.icon;
                             return (
                                 <SwiperSlide key={index}>
-                                    <div className="flex flex-col items-center gap-3 p-3 sm:p-2
+                                    <div className='flex flex-col items-center gap-3 p-3 sm:p-2'>
+                                        <div className="flex flex-col items-center  p-5 
                                         bg-white hover:shadow-md rounded-lg transition-all duration-300">
-                                        <IconComponent
-                                            className="w-10 h-10 sm:w-8 sm:h-8 text-secondary"
-                                        />
-                                        <span className="text-secondary font-semibold text-sm sm:text-xs">
+                                            <IconComponent
+                                                className="w-10 h-10  text-secondary"
+                                            />
+
+                                        </div>
+                                        <span className="text-secondary font-semibold text-sm">
                                             {tech.name}
                                         </span>
                                     </div>
@@ -101,16 +108,17 @@ const DevDocs = () => {
                             );
                         })}
                     </Swiper>
-
-                    <button
-                        onClick={handleNext}
-                        className="flex flex-col items-center gap-3 p-3 sm:p-2 
-                            min-w-[100px] sm:min-w-[80px]
-                            bg-white hover:shadow-md rounded-lg transition-all duration-300"
-                    >
-                        <FaChevronRight className="w-10 h-10 sm:w-8 sm:h-8 text-secondary" />
+                    <div className='flex flex-col items-center gap-3 p-3 sm:p-2'>
+                        <button
+                            onClick={handleNext}
+                            className="flex flex-col items-center gap-3 p-5 
+                        min-w-[100px] sm:min-w-[80px]
+                        bg-white hover:shadow-md rounded-lg transition-all duration-300"
+                        >
+                            <FaChevronRight className="w-10 h-10  text-secondary" />
+                        </button>
                         <span className="text-secondary font-semibold text-sm sm:text-xs">More</span>
-                    </button>
+                    </div>
                 </div>
             </div>
 
