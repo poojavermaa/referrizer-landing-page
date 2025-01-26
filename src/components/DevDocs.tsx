@@ -26,23 +26,22 @@ const DevDocs = () => {
     };
 
     return (
-        <div className="w-full bg-[#F8F9FB] py-[2%] px-[8%] sm:py-[4%] sm:px-[4%]">
+        <div className="w-full bg-gray-50 py-[2%] px-[8%] sm:py-[4%] sm:px-[4%]">
             <div className="text-center mb-8 sm:mb-6">
-                <span className="text-[#377DFF] text-sm font-semibold sm:text-xs">Dev Docs</span>
-                <h2 className="text-[#23283B] text-4xl font-bold mt-4 mb-4 
+                <span className="text-primary text-sm font-semibold sm:text-xs">Dev Docs</span>
+                <h2 className="text-secondary text-4xl font-bold mt-4 mb-4 
                     sm:text-2xl sm:mt-2 sm:mb-2">
                     Dev Documentation
                 </h2>
-                <h3 className="text-[#23283B] text-2xl font-bold mb-4 
+                <h3 className="text-secondary text-2xl font-bold mb-4 
                     sm:text-lg sm:mb-2">
                     Integrate your application in minutes
                 </h3>
-                <p className="text-[#6B7B9C] text-base sm:text-sm max-w-2xl mx-auto">
+                <p className="text-secondary-light text-base sm:text-sm max-w-2xl mx-auto">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel aliquam, massa nec hendrerit laoreet.
                 </p>
             </div>
 
-            {/* Code Editor Image */}
             <div className="max-w-4xl mx-auto mb-12 sm:mb-8">
                 <img
                     src="./images/editor-2.png"
@@ -51,7 +50,6 @@ const DevDocs = () => {
                 />
             </div>
 
-            {/* Technologies Slider */}
             <div className="max-w-5xl mx-auto">
                 <div className="flex items-center gap-4 sm:gap-2">
                     <Swiper
@@ -93,9 +91,9 @@ const DevDocs = () => {
                                     <div className="flex flex-col items-center gap-3 p-3 sm:p-2
                                         bg-white hover:shadow-md rounded-lg transition-all duration-300">
                                         <IconComponent
-                                            className="w-10 h-10 sm:w-8 sm:h-8 text-[#272847]"
+                                            className="w-10 h-10 sm:w-8 sm:h-8 text-secondary"
                                         />
-                                        <span className="text-[#23283B] font-semibold text-sm sm:text-xs">
+                                        <span className="text-secondary font-semibold text-sm sm:text-xs">
                                             {tech.name}
                                         </span>
                                     </div>
@@ -104,24 +102,22 @@ const DevDocs = () => {
                         })}
                     </Swiper>
 
-                    {/* More Button */}
                     <button
                         onClick={handleNext}
                         className="flex flex-col items-center gap-3 p-3 sm:p-2 
                             min-w-[100px] sm:min-w-[80px]
                             bg-white hover:shadow-md rounded-lg transition-all duration-300"
                     >
-                        <FaChevronRight className="w-10 h-10 sm:w-8 sm:h-8 text-[#272847]" />
-                        <span className="text-[#23283B] font-semibold text-sm sm:text-xs">More</span>
+                        <FaChevronRight className="w-10 h-10 sm:w-8 sm:h-8 text-secondary" />
+                        <span className="text-secondary font-semibold text-sm sm:text-xs">More</span>
                     </button>
                 </div>
             </div>
 
-            {/* View Docs Button */}
             <div className="text-center mt-12 sm:mt-8">
-                <button className="inline-flex items-center gap-2 text-[#377DFF] font-semibold 
-                    border-2 border-[#377DFF] px-8 py-3 sm:px-6 sm:py-2 rounded-lg
-                    hover:bg-[#377DFF] hover:text-white transition-all duration-300
+                <button className="inline-flex items-center gap-2 text-primary font-semibold 
+                    border-2 border-primary px-8 py-3 sm:px-6 sm:py-2 rounded-lg
+                    hover:bg-primary hover:text-white transition-all duration-300
                     text-base sm:text-sm">
                     <HiDocumentText className="w-5 h-5 sm:w-4 sm:h-4" />
                     View Dev Docs

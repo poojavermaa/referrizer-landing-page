@@ -47,16 +47,16 @@ const SlideNavButtons = () => {
             <button
                 onClick={() => swiper.slidePrev()}
                 className="w-12 h-12 sm:w-8 sm:h-8 rounded-full bg-white shadow-md flex items-center justify-center
-                    hover:bg-[#377DFF] group transition-all duration-300 border border-[#377DFF]"
+                    hover:bg-primary group transition-all duration-300 border border-primary"
             >
-                <FaArrowLeft className="text-[#377DFF] group-hover:text-white text-sm" />
+                <FaArrowLeft className="text-primary group-hover:text-white text-sm" />
             </button>
             <button
                 onClick={() => swiper.slideNext()}
                 className="w-12 h-12 sm:w-8 sm:h-8 rounded-full bg-white shadow-md flex items-center justify-center
-                    hover:bg-[#377DFF] group transition-all duration-300 border border-[#377DFF]"
+                    hover:bg-primary group transition-all duration-300 border border-primary"
             >
-                <FaArrowRight className="text-[#377DFF] group-hover:text-white text-sm" />
+                <FaArrowRight className="text-primary group-hover:text-white text-sm" />
             </button>
         </div>
     );
@@ -64,14 +64,15 @@ const SlideNavButtons = () => {
 
 const Testimonial = () => {
     return (
-        <div className="w-full py-[7%] px-[8%] sm:py-[8%] sm:px-[5%]">
+        <div className="w-full bg-gray-50 py-[4%] px-[8%] sm:py-[4%] sm:px-[4%]">
             {/* Header */}
-            <div className="text-center mb-8 sm:mb-6">
-                <span className="text-[#377DFF] text-sm font-semibold sm:text-xs">Testimonials</span>
-                <h2 className="text-[#23283B] text-4xl font-bold mt-4 mb-4 sm:text-2xl sm:mt-2 sm:mb-2">
-                    What partners says about us
+            <div className="text-center mb-12 sm:mb-8">
+                <span className="text-primary text-sm font-semibold sm:text-xs">Testimonials</span>
+                <h2 className="text-secondary text-4xl font-bold mt-4 mb-4 
+                    sm:text-2xl sm:mt-2 sm:mb-2">
+                    What Our Partners Say
                 </h2>
-                <p className="text-[#6B7B9C] text-base sm:text-sm max-w-2xl mx-auto">
+                <p className="text-secondary-light text-base sm:text-sm max-w-2xl mx-auto">
                     We Create dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod...
                 </p>
             </div>
@@ -102,15 +103,15 @@ const Testimonial = () => {
                                 {/* Content */}
                                 <div className="w-full md:w-1/2 flex flex-col justify-start items-start 
                                     md:pr-12">
-                                    <h3 className="text-[#23283B] text-3xl font-bold mb-2 
+                                    <h3 className="text-secondary text-3xl font-bold mb-2 
                                         sm:text-xl sm:mb-1">
                                         {testimonial.name}
                                     </h3>
-                                    <p className="text-[#6B7B9C] text-lg mb-6 
+                                    <p className="text-secondary-light text-lg mb-6 
                                         sm:text-base sm:mb-4">
                                         {testimonial.role}
                                     </p>
-                                    <p className="text-[#6B7B9C] text-base leading-relaxed 
+                                    <p className="text-secondary-light text-base leading-relaxed 
                                         sm:text-sm sm:leading-relaxed">
                                         {testimonial.content}
                                     </p>
