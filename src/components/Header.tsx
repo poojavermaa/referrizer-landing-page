@@ -3,9 +3,9 @@ import { HiPlay } from 'react-icons/hi2';
 
 const Header = () => {
     return (
-        <div className="relative w-full min-h-screen overflow-hidden
-            bg-[url('./images/header-mobile.png')] bg-no-repeat bg-cover bg-center
-            md:bg-[url('./images/header.png')]">
+        <div
+            className="header relative w-full min-h-screen overflow-hidden
+            bg-no-repeat bg-cover bg-center">
             <div className="relative max-w-7xl mx-auto px-4 pt-24 lg:pt-32 sm:px-6 lg:px-8">
                 <div className="text-center mb-8 lg:mb-12">
                     <h1 className="text-white text-3xl lg:text-6xl font-bold leading-tight mb-4 lg:mb-6

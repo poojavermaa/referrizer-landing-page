@@ -35,3 +35,16 @@
 .tech-stack-swiper .swiper-slide {
     height: auto !important;
 }
+
+.header {
+    background-image: url("./images/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .header {
+        background-image: url("./images/header-mobile.png");
+    }
+}
