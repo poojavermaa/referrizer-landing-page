@@ -1,4 +1,3 @@
-import React from 'react';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 // import 'swiper/swiper.css';
@@ -65,7 +64,6 @@ const SlideNavButtons = () => {
 const Testimonial = () => {
     return (
         <div className="w-full bg-gray-50 py-[4%] px-[8%] sm:py-[4%] sm:px-[4%]">
-            {/* Header */}
             <div className="text-center mb-12 sm:mb-8">
                 <span className="text-primary text-sm font-semibold sm:text-xs">Testimonials</span>
                 <h2 className="text-secondary text-4xl font-bold mt-4 mb-4 
@@ -77,7 +75,6 @@ const Testimonial = () => {
                 </p>
             </div>
 
-            {/* Testimonial Slider */}
             <div className="relative">
                 <Swiper
                     modules={[Navigation]}
@@ -90,7 +87,6 @@ const Testimonial = () => {
                         <SwiperSlide key={testimonial.id}>
                             <div className="flex flex-col md:flex-row items-center gap-12 
                                 md:gap-12 sm:gap-6">
-                                {/* Image with background */}
                                 <div className="relative w-full md:w-1/2">
                                     <img
                                         src={testimonial.image}
@@ -100,7 +96,6 @@ const Testimonial = () => {
                                     />
                                 </div>
 
-                                {/* Content */}
                                 <div className="w-full md:w-1/2 flex flex-col justify-start items-start 
                                     md:pr-12">
                                     <h3 className="text-secondary text-3xl font-bold mb-2 

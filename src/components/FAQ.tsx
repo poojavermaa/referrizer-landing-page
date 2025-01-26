@@ -11,29 +11,26 @@ const FAQ = () => {
 
   return (
     <div className="w-full  py-[2%] px-[8%] sm:py-[4%] sm:px-[8%]">
-      <div className="faq-section">
-        {/* FAQ Header */}
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h5 className="text-[#377DFF] text-xs font-semibold mb-5">FAQ's</h5>
-          <h2 className="text-[#23283B] text-4xl font-bold mb-5 sm:text-2xl">Frequently Asked Questions</h2>
-          <p className="text-[#6B7B9C] text-base font-normal sm:text-sm">
+          <h5 className="text-primary text-xs font-semibold mb-5">FAQ's</h5>
+          <h2 className="text-secondary text-4xl font-bold mb-5 sm:text-2xl">Frequently Asked Questions</h2>
+          <p className="text-secondary-light text-base font-normal sm:text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel aliquam, massa nec hendrerit laoreet.
           </p>
         </div>
 
-        {/* FAQ Menu */}
         <div className="mt-12">
-          {/* FAQ Items */}
           {[...Array(6)].map((_, index) => (
             <div key={index} className="mb-6">
               <div
-                className="flex justify-between items-center bg-[#F4F6FE] p-6 rounded-lg cursor-pointer sm:p-3"
+                className="flex justify-between items-center bg-gray-50 p-6 rounded-lg cursor-pointer sm:p-3"
                 onClick={() => handleToggle(index)}
               >
-                <h3 className="text-lg font-semibold sm:text-sm">
+                <h3 className="text-secondary text-lg font-semibold sm:text-sm">
                   {getFAQQuestion(index)}
                 </h3>
-                <div className="text-[#377DFF] transition-transform duration-300">
+                <div className="text-primary transition-transform duration-300">
                   {activeIndex === index ?
                     <AiOutlineMinus className="text-4xl sm:text-2xl" /> :
                     <AiOutlinePlus className="text-4xl sm:text-2xl" />
@@ -45,7 +42,7 @@ const FAQ = () => {
                   }`}
               >
                 <div className="overflow-hidden">
-                  <div className="px-6 py-5 text-[#6B7B9C]">
+                  <div className="px-6 py-5 text-secondary-light">
                     <p className="text-base font-normal sm:text-sm">
                       {getFAQAnswer(index)}
                     </p>
@@ -60,7 +57,6 @@ const FAQ = () => {
   );
 };
 
-// Helper functions to get FAQ content
 const getFAQQuestion = (index: number): string => {
   const questions = [
     "Lorem ipsum dummy text here",
@@ -86,3 +82,4 @@ const getFAQAnswer = (index: number): string => {
 };
 
 export { FAQ };
+

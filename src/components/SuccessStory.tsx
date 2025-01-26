@@ -1,7 +1,6 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { BsLinkedin } from "react-icons/bs";
@@ -61,9 +60,9 @@ const SuccessStory = () => {
     return (
         <div className='w-full py-[2%] px-[8%] sm:py-[4%] sm:px-[8%]'>
             <div className='text-center mb-12'>
-                <span className='text-[#377DFF] text-sm font-semibold'>Success Stories</span>
-                <h2 className='text-[#23283B] text-4xl font-bold mt-4 mb-4 sm:text-2xl'>Success Stories</h2>
-                <p className='text-[#6B7B9C] text-base sm:text-sm'>
+                <span className='text-primary text-sm font-semibold'>Success Stories</span>
+                <h2 className='text-secondary text-4xl font-bold mt-4 mb-4 sm:text-2xl'>Success Stories</h2>
+                <p className='text-secondary-light text-base sm:text-sm'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel aliquam, massa nec hendrerit laoreet.
                 </p>
             </div>
@@ -88,8 +87,8 @@ const SuccessStory = () => {
 
             <div className='text-center mt-12'>
                 <button
-                    className='text-[#377DFF] font-semibold border-2 border-[#377DFF] px-8 py-3 rounded-lg
-                    hover:bg-[#377DFF] hover:text-white transition-all duration-300'
+                    className='text-primary font-semibold border-2 border-primary px-8 py-3 rounded-lg
+                    hover:bg-primary hover:text-white transition-all duration-300'
                 >
                     Read All Stories
                 </button>
@@ -99,27 +98,27 @@ const SuccessStory = () => {
 };
 
 const StoryCard = ({ story }: { story: Story }) => (
-    <div className='bg-white '>
-        <div className='text-[#377DFF] text-4xl mb-4'>❝</div>
-        <h3 className='text-[#23283B] text-xl font-semibold mb-4'>{story.title}</h3>
-        <p className='text-[#6B7B9C] text-base mb-8'>{story.content}</p>
+    <div className='bg-white'>
+        <div className='text-primary text-4xl mb-4'>❝</div>
+        <h3 className='text-secondary text-xl font-semibold mb-4'>{story.title}</h3>
+        <p className='text-secondary-light text-base mb-8'>{story.content}</p>
 
         <div className='flex items-center justify-between mb-6'>
             <div className='flex items-center gap-4'>
-                <BsLinkedin className='text-[#377DFF] text-xl' />
-                <span className='text-[#377DFF] text-sm'>LinkedIn</span>
+                <BsLinkedin className='text-primary text-xl' />
+                <span className='text-primary text-sm'>LinkedIn</span>
             </div>
             <div className='flex items-center gap-2'>
-                <HiOutlineEye className='text-[#377DFF] text-xl' />
-                <span className='text-[#377DFF] text-sm'>View Story</span>
+                <HiOutlineEye className='text-primary text-xl' />
+                <span className='text-primary text-sm'>View Story</span>
             </div>
         </div>
 
         <div className='flex items-center gap-4'>
             <img src={story.author.image} alt={story.author.name} className='w-12 h-12 rounded-full object-cover' />
             <div>
-                <h4 className='text-[#23283B] font-semibold'>{story.author.name}</h4>
-                <p className='text-[#6B7B9C] text-sm'>
+                <h4 className='text-secondary font-semibold'>{story.author.name}</h4>
+                <p className='text-secondary-light text-sm'>
                     {story.author.role} <span className='font-semibold'>{story.author.company}</span>
                 </p>
             </div>

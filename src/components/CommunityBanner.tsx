@@ -1,11 +1,9 @@
-import React from "react";
-
 const CommunityBanner = () => {
     return (
-        <div className="relative w-full py-[2%] px-[8%] sm:py-[4%] sm:px-[8%]">
+        <div className="relative w-full py-[2%] sm:py-[4%] sm:px-[8%]">
 
 
-            <div className="relative w-full bg-[#377DFF] rounded-lg">
+            <div className="relative w-full bg-primary sm:rounded-lg">
                 {/* Background Wire SVG */}
                 <div className="absolute inset-0 w-full h-full">
                     <img
@@ -30,7 +28,7 @@ const CommunityBanner = () => {
                     </p>
 
                     {/* CTA Button */}
-                    <button className="bg-white text-[#377DFF] px-8 py-3 rounded-lg font-semibold 
+                    <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold 
                         hover:bg-opacity-90 transition-all duration-300">
                         Join the Community
                     </button>

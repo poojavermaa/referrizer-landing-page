@@ -1,4 +1,3 @@
-import React from 'react';
 import { BsTrophy } from 'react-icons/bs';
 import { HiPlay } from 'react-icons/hi2';
 
@@ -7,9 +6,7 @@ const Header = () => {
         <div className="relative w-full min-h-screen overflow-hidden
             bg-[url('./images/header-mobile.png')] bg-no-repeat bg-cover bg-center
             md:bg-[url('./images/header.png')]">
-            {/* Main Content */}
             <div className="relative max-w-7xl mx-auto px-4 pt-24 lg:pt-32 sm:px-6 lg:px-8">
-                {/* Hero Section */}
                 <div className="text-center mb-8 lg:mb-12">
                     <h1 className="text-white text-3xl lg:text-6xl font-bold leading-tight mb-4 lg:mb-6
                         px-4">
@@ -38,7 +35,6 @@ const Header = () => {
                     </div>
                 </div>
 
-                {/* Code Editor Image */}
                 <div className="relative max-w-md lg:max-w-2xl mx-auto mt-8">
                     <img
                         src="./images/editor-1.png"
@@ -46,7 +42,6 @@ const Header = () => {
                         className="w-full rounded-lg"
                     />
 
-                    {/* Desktop Floating Cards */}
                     <div className="hidden lg:block absolute left-[-15rem] bottom-[20.5rem]
                         bg-white rounded-2xl shadow-card">
                         <div className="flex items-center gap-3">

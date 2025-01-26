@@ -1,5 +1,3 @@
-import React from 'react'
-
 const AppPartner = () => {
     return (
         <div className="w-full h-[50vh] px-[8%] bg-[url('./images/app-market-mobile.png')] 
