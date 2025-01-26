@@ -1,32 +1,22 @@
 import React from "react";
-import Footer from "./components/Footer";
-import { BrowserRouter } from "react-router-dom";
-import { FAQ } from "./components/FAQ";
-import CommunityBanner from "./components/CommunityBanner";
-import SuccessStory from "./components/SuccessStory";
-import Testimonial from "./components/Testimonial";
-import DevDocs from "./components/DevDocs";
-import Tools from "./components/Tools";
-import AppPartner from "./components/AppPartner";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import { Home } from "./pages/Home";
 
 function App() {
     return (
-        <>
-            <BrowserRouter>
+        <BrowserRouter>
+            <div className="flex flex-col min-h-screen">
                 <Navbar />
-                <Header />
-                <AppPartner />
-                <Tools />
-                <DevDocs />
-                <Testimonial />
-                <FAQ />
-                <CommunityBanner />
-                <SuccessStory />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    {/* Redirect all unknown routes to home */}
+                    <Route path="*" element={<Navigate to="/" replace />} />
+                </Routes>
                 <Footer />
-            </BrowserRouter>
-        </>
+            </div>
+        </BrowserRouter>
     );
 }
 

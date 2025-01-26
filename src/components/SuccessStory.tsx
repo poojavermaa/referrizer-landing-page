@@ -127,4 +127,4 @@ const StoryCard = ({ story }: { story: Story }) => (
     </div>
 );
 
-export default SuccessStory;
+export { SuccessStory };

@@ -55,4 +55,4 @@ const CommunityBanner = () => {
     );
 };
 
-export default CommunityBanner;
+export { CommunityBanner };

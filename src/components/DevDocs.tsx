@@ -131,4 +131,4 @@ const DevDocs = () => {
     );
 };
 
-export default DevDocs;
+export { DevDocs };

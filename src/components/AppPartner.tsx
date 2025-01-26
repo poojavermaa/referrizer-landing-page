@@ -23,5 +23,5 @@ const AppPartner = () => {
     )
 }
 
-export default AppPartner
+export { AppPartner };
 
