@@ -8,11 +8,15 @@ import Testimonial from "./components/Testimonial";
 import DevDocs from "./components/DevDocs";
 import Tools from "./components/Tools";
 import AppPartner from "./components/AppPartner";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 function App() {
     return (
         <>
             <BrowserRouter>
+                <Navbar />
+                <Header />
                 <AppPartner />
                 <Tools />
                 <DevDocs />

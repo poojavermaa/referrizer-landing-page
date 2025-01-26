@@ -8,167 +8,142 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 
 const Footer: React.FC = () => {
     return (
-        <footer className='bg-[#23283b] py-14'>
-            <div className='container grid grid-cols-2 md:grid-cols-6 gap-6'>
-                {/* Logo Section */}
-                <div className='md:col-span-1 flex justify-center md:justify-start md:block hidden'>
-                    <Link to='/'>
-                        <img src='src/images/Group.png' alt='footer-logo' className='h-6 ' />
-                    </Link>
+        <footer className="bg-[#23283b] py-14">
+            {/* Main Footer Content */}
+            <div className="container mx-auto px-4 max-w-7xl">
+                <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-12">
+                    {/* Logo Section */}
+                    <div className="md:col-span-1 hidden md:block">
+                        <Link to="/">
+                            <img
+                                src="./images/logo-light.png"
+                                alt="footer-logo"
+                                className="h-6"
+                            />
+                        </Link>
+                    </div>
+
+                    {/* Navigation Sections */}
+                    <div className="space-y-4">
+                        <h4 className="text-white text-sm font-semibold">Company</h4>
+                        <ul className="space-y-3">
+                            {["About Us", "We're Hiring", "Investors", "Contact"].map((item) => (
+                                <li key={item}>
+                                    <Link className="text-gray-400 text-xs hover:text-white transition-colors" to="/">
+                                        {item}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h4 className="text-white text-sm font-semibold">Solutions</h4>
+                        <ul className="space-y-3">
+                            {[
+                                "Customer Lead Generation",
+                                "Customer Retention Boost",
+                                "Reputation Management",
+                                "Marketing Automation",
+                                "PartnerUp Network"
+                            ].map((item) => (
+                                <li key={item}>
+                                    <Link className="text-gray-400 text-xs hover:text-white transition-colors" to="/">
+                                        {item}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h4 className="text-white text-sm font-semibold">Resources</h4>
+                        <ul className="space-y-3">
+                            {[
+                                "Blog",
+                                "Videos",
+                                "Case Studies",
+                                "Marketplace",
+                                "Industries"
+                            ].map((item) => (
+                                <li key={item}>
+                                    <Link className="text-gray-400 text-xs hover:text-white transition-colors" to="/">
+                                        {item}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h4 className="text-white text-sm font-semibold">Help</h4>
+                        <ul className="space-y-3">
+                            {[
+                                "Support",
+                                "Knowledge Base",
+                                "Live Chat"
+                            ].map((item) => (
+                                <li key={item}>
+                                    <Link className="text-gray-400 text-xs hover:text-white transition-colors" to="/">
+                                        {item}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h4 className="text-white text-sm font-semibold">Partners</h4>
+                        <ul className="space-y-3">
+                            {[
+                                "Development Partners",
+                                "Affiliate Program",
+                                "Partner Offers"
+                            ].map((item) => (
+                                <li key={item}>
+                                    <Link className="text-gray-400 text-xs hover:text-white transition-colors" to="/">
+                                        {item}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
-                {/* Company Section */}
-                <div>
-                    <h4 className='text-sm font-semibold mb-4 text-white'>Company</h4>
-                    <ul className='space-y-2'>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                About Us
+
+                {/* Bottom Section */}
+                <div className="pt-8 border-t border-gray-700">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                        {/* Social Links */}
+                        <div className="flex items-center gap-6">
+                            {[
+                                { Icon: LinkedInIcon, label: "LinkedIn" },
+                                { Icon: TwitterIcon, label: "Twitter" },
+                                { Icon: InstagramIcon, label: "Instagram" },
+                                { Icon: FacebookIcon, label: "Facebook" },
+                                { Icon: YouTubeIcon, label: "YouTube" }
+                            ].map(({ Icon, label }) => (
+                                <Link
+                                    key={label}
+                                    to="/"
+                                    className="text-gray-400 hover:text-white transition-colors"
+                                    aria-label={label}
+                                >
+                                    <Icon fontSize="small" />
+                                </Link>
+                            ))}
+                        </div>
+
+                        {/* Copyright and Links */}
+                        <div className="flex items-center gap-6 text-gray-400 text-sm">
+                            <span>© 2013-2021 Referrizer Inc.</span>
+                            <Link to="/" className="hover:text-white transition-colors">
+                                Login
                             </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                We're Hiring
+                            <Link to="/" className="hover:text-white transition-colors">
+                                Sign up for free
                             </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Investors
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Contact
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-                {/* Solutions Section */}
-                <div>
-                    <h4 className='text-sm font-semibold mb-4 text-white'>Solutions</h4>
-                    <ul className='space-y-2'>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Customer Lead Generation
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Customer Relation Boost
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Repulation Manageent
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Marketing Automation
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                PartnerUp Network
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-                {/* Resources Section */}
-                <div>
-                    <h4 className='text-sm font-semibold mb-4 text-white'>Resources</h4>
-                    <ul className='space-y-2'>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Blog
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Videos
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Case Studies
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Marketplace
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Industries
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-                {/* Help Section */}
-                <div>
-                    <h4 className='text-sm font-semibold mb-4 text-white'>Help</h4>
-                    <ul className='space-y-2'>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Support
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Knowledge Base
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Live Chat
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-                {/* Partner Section */}
-                <div>
-                    <h4 className='text-sm font-semibold mb-4 text-white'>Partners</h4>
-                    <ul className='space-y-2'>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Development Partners
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Affiliate Program
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='text-gray-400 text-xs' to='/'>
-                                Partner Offers
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <Link className='text-white text-[0.08rem]' to='/'>
-                        <LinkedInIcon fontSize='small' />
-                    </Link>
-                    <Link className='text-white text-[0.08rem]' to='/'>
-                        <TwitterIcon fontSize='small' />
-                    </Link>
-                    <Link className='text-white text-[0.08rem]' to='/'>
-                        <InstagramIcon fontSize='small' />
-                    </Link>
-                    <Link className='text-white text-[0.08rem]' to='/'>
-                        <FacebookIcon fontSize='small' />
-                    </Link>
-                    <Link className='text-white text-[0.08rem]' to='/'>
-                        <YouTubeIcon fontSize='small' />
-                    </Link>
-                </div>
-                <div>
-                    <p>© 2013-2021 Referrizer Inc.</p>
-                    <p>Login</p>
-                    <p>Sign up for free</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
