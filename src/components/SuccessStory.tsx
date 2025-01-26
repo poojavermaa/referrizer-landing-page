@@ -75,7 +75,7 @@ const SuccessStory = () => {
             </div>
 
             {/* Mobile View with Swiper */}
-            <div className='md:hidden'>
+            <div className='md:hidden py-3 overflow-x-hidden' >
                 <Swiper style={{
                     overflow: 'visible'
                 }} modules={[Pagination]} spaceBetween={20} slidesPerView={1} pagination={{ clickable: true }} className='mySwiper'>
